@@ -20,7 +20,9 @@ jobs:
         run: npm install
 
       - name: Install FFmpeg
-        run: npx remotion install-ffmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
 
       - name: Render HelloWorld video
         run: npx remotion render HelloWorld out/hello.mp4
