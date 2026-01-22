@@ -1,9 +1,22 @@
 {
+  "name": "clay-animation",
+  "version": "1.0.0",
+  "scripts": {
+    "render": "remotion render ClayAnimation out/video.mp4"
+  },
   "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.250",
     "@react-three/drei": "^10.7.7",
     "@react-three/fiber": "^9.5.0",
     "@remotion/three": "^4.0.407",
-    "@types/three": "^0.182.0",
     "three": "^0.182.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/web": "^0.0.115",
+    "@types/three": "^0.182.0",
+    "typescript": "^5.4.5"
   }
 }
